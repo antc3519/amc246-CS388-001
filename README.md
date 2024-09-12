@@ -1,39 +1,39 @@
-# Android Prework - *Hello World*
+# Lab 1: Tap Counter App
 
-Submitted by: **Anthony Caruso**
+Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/1#!labs)
 
-**Hello World** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
+Submitted by: **Anthony Caruso** <!-- Replace 'Your Name Here' with your actual name -->
 
-Time spent: **1** hours spent in total
+**Tap Counter App** is an Android app inspired by idle tap games, allowing users to accumulate points through taps, which can be exchanged for upgrades.
+
+Time spent: **1.5** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* [x] Image and introductory message displayed on screen
-* [x] Button displayed on screen
-* [x] Toast with message appears when button is pressed 
+- [x] **User can see a number displayed on the screen. The number starts at 0.**
+    - ![Image/GIF showing the initial display of the number](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+
+- [x] **User can tap on a button to see the number displayed increase by 1.**
+    - ![Image/GIF showing the number increase on button tap](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+
+## Stretch Features
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+- [x] User can exchange number of taps accumulated for upgrades (e.g., each tap counts as 2 taps).
+    - ![Image/GIF showing the upgrade process](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-## Video Walkthrough
+- [x] User can customize the app's theme (e.g., using a dog background and a paw print button).
+    - ![Image/GIF showing theme customization](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
-Here's a walkthrough of implemented features:
-
-<img src='https://github.com/antc3519/amc246-CS388-001/blob/lab1/tapCounter.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with LICEcap 
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+- [ ] User has progressively difficult goals to reach in terms of number of taps accumulated.
+    - ![Image/GIF showing goals and progress](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Describe any challenges encountered while building the app. <!-- Replace this with your specific challenges and experiences -->
 
 ## License
 
