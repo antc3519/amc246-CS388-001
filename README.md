@@ -33,7 +33,7 @@ The following **optional** features are implemented:
 
 ## Notes
 
-Describe any challenges encountered while building the app. <!-- Replace this with your specific challenges and experiences -->
+It was difficult figuring out the branch feature of Github using Android Studio. Other than that though the project was simple! <!-- Replace this with your specific challenges and experiences -->
 
 ## License
 
