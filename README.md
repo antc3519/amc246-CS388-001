@@ -1,42 +1,49 @@
-# Android Prework - *Hello World*
+# Lab 2: CodepathMail
 
-Submitted by: **Anthony Caruso**
+Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/2#!labs)
 
-**Hello World** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
+Submitted by: **Anthony Caruso** <!-- Replace 'Your Name Here' with your actual name -->
 
-Time spent: **1** hours spent in total
+**CodepathMail** is a simple email app clone inspired by Gmail, allowing users to scroll through a list of emails.
 
-## Required Features
+Time spent: **3** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
+
+## Application Features
+
+### Required Features
 
 The following **required** functionality is completed:
 
-* [x] Image and introductory message displayed on screen
-* [x] Button displayed on screen
-* [x] Toast with message appears when button is pressed 
+- [x] (4 pts) **User can scroll through a list of 10 emails.**
+  - Each email contains the following information:
+    - Sender
+    - Email title
+    - Email summary
+  - ![Image/GIF showing the basic email list display](https://github.com/antc3519/amc246-CS388-001/blob/lab2/gmailClone.gif)) <!-- Replace this link with your actual image/GIF link -->
 
-The following **optional** features are implemented:
+### Stretch Features
 
-* [ ] List anything else that you can get done to improve the app functionality!
+The following **stretch** functionality is implemented:
 
-## Video Walkthrough
+- [x] (3 pts) **User can press a 'Load More' button to see the next 5 emails displayed.**
 
-Here's a walkthrough of implemented features:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+- [x] (3 pts) **Each email displays additional information:**
+  - Picture of the sender
+  - Email sent date
+  - Bolded information if the email is unread
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It was hard trying to figure out how to add an on click listener to each item in the recycler view but I figured it out!
+
+## Resources
+
+- [Create dynamic lists with RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
+- [Using the RecyclerView](https://guides.codepath.com/android/using-the-recyclerview)
 
 ## License
 
+```plaintext
     Copyright [2024] [Anthony Caruso]
 
     Licensed under the Apache License, Version 2.0 (the "License");
