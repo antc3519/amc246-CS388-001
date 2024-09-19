@@ -1,29 +1,42 @@
 package caruso.example.myapplication
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.children
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var emails: List<Email>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // Lookup the RecyclerView in activity layout
+        val emailsRv = findViewById<RecyclerView>(R.id.emailsRv)
+
+
+        // Fetch the list of emails
+        emails = EmailFetcher.getEmails()
+        // Create adapter passing in the list of emails
+        val adapter = EmailAdapter(emails)
+        // Attach the adapter to the RecyclerView to populate items
+        emailsRv.adapter = adapter
+        // Set layout manager to position the items
+        emailsRv.layoutManager = LinearLayoutManager(this)
+
+        findViewById<Button>(R.id.loadMore).setOnClickListener {
+            val newEmails = EmailFetcher.getNext5Emails()
+
+            (emails as MutableList<Email>).addAll(newEmails)
+            // Fetch next 5 emails and display in RecyclerView
+
+            adapter.notifyDataSetChanged()
         }
 
-        val button = findViewById<Button>(R.id.helloButton)
-        button.setOnClickListener{
-            Log.d("Hello World", "Button Clicked")
-            Toast.makeText(this, "Hello back!", Toast.LENGTH_SHORT).show()
-        }
+
     }
 }
