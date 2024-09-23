@@ -1,31 +1,36 @@
-# Android Prework - *Hello World*
+# Android Project 2 - *Wishlist*
 
 Submitted by: **Anthony Caruso**
 
-**Hello World** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
+**Wishlist** is a wishlist app that helps the user keep track of what they want to buy.
 
-Time spent: **1** hours spent in total
+Time spent: **3.5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* [x] Image and introductory message displayed on screen
-* [x] Button displayed on screen
-* [x] Toast with message appears when button is pressed 
+- [x] **User can add an item to their wishlist**
+- [x] **User can see their list of items based on previously inputted items**
 
 The following **optional** features are implemented:
+
+- [x] Wishlist app is 🎨 **customized** 🎨
+- [x] User can delete an item by long pressing on the item
+- [x] User can open an item's URL by clicking on the item
+
+The following **additional** features are implemented:
 
 * [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented features:
+Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/antc3519/amc246-CS388-001/blob/wishlist/wishlist.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LITEcap
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -33,7 +38,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It was difficult figuring out how to implement the long click listener successfully and learning how to delete an item in the list through it. I also had some issues setting up the customized fonts and colors, which took a lot of looking at documentation
 
 ## License
 
