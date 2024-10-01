@@ -1,4 +1,4 @@
-package caruso.example.myapplication
+package com.codepath.bestsellerlistapp
 
 import org.junit.Test
 
