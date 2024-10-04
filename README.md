@@ -1,39 +1,27 @@
-# Android Prework - *Hello World*
+# Android Studio Development Projects 
 
 Submitted by: **Anthony Caruso**
 
-**Hello World** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
+**This repository** is a collection of projects from my CS388 - Android Develop class.
+
+Each project can be reahed using **their respective branches**, and includes a readme with the specifications for the project alongside a gif showinfg how the app works
 
 Time spent: **1** hours spent in total
 
-## Required Features
+## Projects
 
 The following **required** functionality is completed:
 
-* [x] Image and introductory message displayed on screen
-* [x] Button displayed on screen
-* [x] Toast with message appears when button is pressed 
-
-The following **optional** features are implemented:
-
-* [ ] List anything else that you can get done to improve the app functionality!
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented features:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+* main - prework (basic hello world app)
+* lab1 - Tap Counter App
+* Worlie - Remake of the Wordle App
+* lab2 - Simple Mail App
+* Wishlist - Item tracker App
+* lab3 - NY Times Bestseller Listing App
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Each project is completed through the **CodePath platform**, a digital coursework program which was used in combination with lectures from the class
 
 ## License
 
