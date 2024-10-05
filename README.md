@@ -1,42 +1,49 @@
-# Android Prework - *Hello World*
+# Lab 3: NY Times Bestselling Books
 
-Submitted by: **Anthony Caruso**
+Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/3#!labs)
 
-**Hello World** is an android app that shows an image and introductory message, and allows pressing a button to display a Toast. 
+Submitted by: **Anthony Caruso** <!-- Replace 'Your Name Here' with your actual name -->
 
-Time spent: **1** hours spent in total
+**NY Times Bestselling Books** is an app designed to display the current bestselling books based on NY Times data.
 
-## Required Features
+Time spent: **2.5** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
+
+## Application Features
+
+### Required Features
 
 The following **required** functionality is completed:
 
-* [x] Image and introductory message displayed on screen
-* [x] Button displayed on screen
-* [x] Toast with message appears when button is pressed 
+- [x] (2 pts) **Live data is loaded from the NY Times API.**
 
-The following **optional** features are implemented:
+- [x] (4 pts) **Books are displayed using a RecyclerView.**
+  - Displays book ranking, cover, title, author, and description.
+  - Book cover images are downloaded using Glide.
+  - ![Image/GIF showing additional email information](https://github.com/antc3519/amc246-CS388-001/blob/lab3/bestseller.gif) <!-- Replace this link with your actual image/GIF link -->
 
-* [ ] List anything else that you can get done to improve the app functionality!
+### Stretch Features
 
-## Video Walkthrough
+The following **stretch** functionality is implemented:
 
-Here's a walkthrough of implemented features:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+- [x] (4 pts) **Improved layout and styling to match the NY Times website.**
+  - Includes a "buy" button that links to Amazon.
+  - ![Image/GIF showing stretch features](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had issues mainly with pushing a new folder structure (given from CodePath) to git after completing the lab, but aside from that I got through the lab fairly easily! <!-- Replace this with your specific challenges and experiences -->
+
+## Resources
+
+- [CodePath's AsyncHTTPClient library](https://guides.codepath.org/android/Using-CodePath-Async-Http-Client)
+- [Displaying Images with Glide library](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library)
+- [Parsing JSON responses to Models](https://guides.codepath.org/android/converting-json-to-models)
+- [Parsing JSON with gson library](https://guides.codepath.org/android/Leveraging-the-Gson-Library#parsing-the-response)
+- [Kotlin's Guide on Serialization](https://kotlinlang.org/docs/serialization.html)
 
 ## License
 
+```plaintext
     Copyright [2024] [Anthony Caruso]
 
     Licensed under the Apache License, Version 2.0 (the "License");

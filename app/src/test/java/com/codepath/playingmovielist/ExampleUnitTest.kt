@@ -1,4 +1,4 @@
-package caruso.example.myapplication
+package com.codepath.playingmovielist
 
 import org.junit.Test
 
