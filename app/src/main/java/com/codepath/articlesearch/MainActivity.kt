@@ -22,10 +22,10 @@ fun createJson() = Json {
 private const val TAG = "MainActivity/"
 private const val SEARCH_API_KEY = BuildConfig.API_KEY
 private const val ARTICLE_SEARCH_URL =
-    "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${SEARCH_API_KEY}"
+    "https://api.themoviedb.org/3/tv/on_the_air?&api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
 
 class MainActivity : AppCompatActivity() {
-    private val articles = mutableListOf<Article>()
+    private val articles = mutableListOf<Show>()
     private lateinit var articlesRecyclerView: RecyclerView
     private lateinit var binding: ActivityMainBinding
 
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                         json.jsonObject.toString()
                     )
                     // TODO: Do something with the returned json (contains article information)
-                    parsedJson.response?.docs?.let { list ->
+                    parsedJson.response?.let { list ->
                         articles.addAll(list)
 
                         articleAdapter.notifyDataSetChanged()

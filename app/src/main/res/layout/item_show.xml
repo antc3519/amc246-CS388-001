@@ -4,6 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="200dp">
 
+    <TextView
+        android:id="@+id/mediaAir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="Abstract"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mediaImage"
+        app:layout_constraintTop_toBottomOf="@+id/mediaTitle" />
+
     <ImageView
         android:id="@+id/mediaImage"
         android:layout_width="0dp"
@@ -30,18 +45,18 @@
         app:layout_constraintTop_toTopOf="@+id/mediaImage" />
 
     <TextView
-        android:id="@+id/mediaAbstract"
+        android:id="@+id/mediaOverview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:ellipsize="end"
         android:maxLines="4"
-        android:text="Abstract"
+        android:text="Air"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/mediaImage"
-        app:layout_constraintTop_toBottomOf="@+id/mediaTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/mediaAir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
