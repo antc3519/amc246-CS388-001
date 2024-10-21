@@ -19,10 +19,16 @@ data class Show(
     val airdate: String?,
     @SerialName("name")
     val title: String?,
+    @SerialName("popularity")
+    val popularity: String?,
+    @SerialName("backdrop_path")
+    val backdrop: String?,
     @SerialName("poster_path")
     val multimedia: String?,
+
 )
 
 : java.io.Serializable {
     val mediaImageUrl = "https://image.tmdb.org/t/p/w500/${multimedia}"
+    val backdropUrl = "https://image.tmdb.org/t/p/w500/${backdrop}"
 }

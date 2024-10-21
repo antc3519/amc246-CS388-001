@@ -32,9 +32,8 @@ class ArticleAdapter(private val context: Context, private val shows: List<Show>
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
         View.OnClickListener {
 
-        private val mediaImageView = itemView.findViewById<ImageView>(R.id.mediaImage)
+        private val mediaImageView = itemView.findViewById<ImageView>(R.id.backdropImage)
         private val titleTextView = itemView.findViewById<TextView>(R.id.mediaTitle)
-        private val airDateTextView = itemView.findViewById<TextView>(R.id.mediaAir)
         private val abstractTextView = itemView.findViewById<TextView>(R.id.mediaOverview)
 
         init {
@@ -44,7 +43,6 @@ class ArticleAdapter(private val context: Context, private val shows: List<Show>
         fun bind(show: Show) {
             titleTextView.text = show.title
             abstractTextView.text = show.overview
-            airDateTextView.text = show.airdate
 
             Glide.with(context)
                 .load(show.mediaImageUrl)

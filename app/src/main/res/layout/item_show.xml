@@ -5,22 +5,22 @@
     android:layout_height="200dp">
 
     <TextView
-        android:id="@+id/mediaAir"
+        android:id="@+id/mediaOverview"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:ellipsize="end"
         android:maxLines="4"
-        android:text="Abstract"
+        android:text="overview"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/mediaImage"
+        app:layout_constraintStart_toEndOf="@+id/backdropImage"
         app:layout_constraintTop_toBottomOf="@+id/mediaTitle" />
 
     <ImageView
-        android:id="@+id/mediaImage"
+        android:id="@+id/backdropImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerInside"
@@ -41,22 +41,7 @@
         android:text="Title"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/mediaImage"
-        app:layout_constraintTop_toTopOf="@+id/mediaImage" />
-
-    <TextView
-        android:id="@+id/mediaOverview"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:ellipsize="end"
-        android:maxLines="4"
-        android:text="Air"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/mediaImage"
-        app:layout_constraintTop_toBottomOf="@+id/mediaAir" />
+        app:layout_constraintStart_toEndOf="@id/backdropImage"
+        app:layout_constraintTop_toTopOf="@+id/backdropImage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
