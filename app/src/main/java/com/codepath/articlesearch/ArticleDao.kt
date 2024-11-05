@@ -13,6 +13,9 @@ interface ArticleDao {
     @Insert
     fun insertAll(articles: List<ArticleEntity>)
 
+    @Insert
+    fun insert(entry: ArticleEntity)
+
     @Query("DELETE FROM article_table")
     fun deleteAll()
 }

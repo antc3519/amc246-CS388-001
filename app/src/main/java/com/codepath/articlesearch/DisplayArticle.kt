@@ -1,8 +1,7 @@
 package com.codepath.articlesearch
 
 data class DisplayArticle(
-    val headline: String?,
-    val abstract: String?,
-    val byline: String?,
-    val mediaImageUrl: String?
+    val date: String?,
+    val sleepTotal: String?,
+    val sleepNotes: String?
 ) : java.io.Serializable
