@@ -1,56 +1,47 @@
-# Lab 5: ArticleSearch Pt 2
+# Android Project 6 - *BitFit2*
 
-Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/5#!labs)
+Submitted by: **Anthony Caruso**
 
-Submitted by: **Anthony Caruso** <!-- Replace 'Your Name Here' with your actual name -->
+**BitFit2** is a health metrics app that allows users to track Sleeping Habits 
 
-**NYT Article Search Pt 2** is an app designed to maintain functionality while offline by caching the latest data fetched from the NYT API, ensuring a smooth user experience even without network connectivity.
+Time spent: **4** hours spent in total
 
-Time spent: **3** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
-
-## Application Features
-
-### Required Features
+## Required Features
 
 The following **required** functionality is completed:
 
-- [x] (2 pts) **Most recently fetched data is stored locally in a database**
-  - The app should cache the latest articles fetched from the NYT API in a local SQLite database using Room.
-  - If the user has fetched data recently, those articles should be available offline.
-  - Ensure old cached data is properly replaced with new data upon successful network fetches.
-  - ![GIF showing database caching functionality](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+- [x] **Use at least 2 Fragments**
+- [x] **Create a new dashboard fragment where users can see a summary of their entered data**
+- [x] **Use one of the Navigation UI Views (BottomNavigation, Drawer Layout, Top Bar) to move between the fragments**
 
-- [x] (2 pts) **If user turns on airplane mode and closes and reopens app, old data from the database should be loaded**
-  - ![GIF showing offline mode functionality](https://github.com/antc3519/amc246-CS388-001/blob/lab5/lab5.gif) <!-- Replace this link with your actual image/GIF link -->
+The following **optional** features are implemented:
 
-### Stretch Features
+- [ ] **Add a more advanced UI (e.g: Graphing) for tracking trends in metrics**
+- [ ] **Implement daily notifications to prompt users to fill in their data**
 
-The following **stretch** functionality is implemented:
+The following **additional** features are implemented:
 
-- [x] (2 pts) **Add Swipe To Refresh to force a new network call to get new data**
+- [ ] List anything else that you can get done to improve the app functionality!
 
-- [ ] (2 pts) **Add setting toggle for user to create preference for caching data or not (Using Shared Preferences)**
+## Video Walkthrough
 
-- [x] (+3 pts) **Implement a Search UI to filter current RecyclerView entries or fetch data from the search API with query**
+Here's a walkthrough of implemented user stories:
 
-- [x] (2 pts) **Listen to network connectivity changes and create a UI to let people know they are offline and automatically reload new data if connectivity returns**
+<img src='https://github.com/antc3519/amc246-CS388-001/blob/bitfitV2/bitfit2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with LICEcap 
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
 
-I had issues implementing the stretch features, mainly the swipe up refresh feature. For me it was difficult to combine it with the search bar while retaining the same list of articles but I figured out a way through it with the order of filter and fetch new data calls<!-- Replace this with your specific challenges and experiences -->
-
-## Resources
-
-- [Data storage with Room](https://developer.android.com/training/data-storage/room)
-- [Swipe To Refresh](https://developer.android.com/training/swipe/add-swipe-interface)
-- [Save key-value data with Shared Preferences](https://developer.android.com/training/data-storage/shared-preferences)
-- [Android Search View](https://developer.android.com/reference/android/widget/SearchView)
-- [Monitor connectivity status and connection metering](https://developer.android.com/training/monitoring-device-state/connectivity-status-type)
-- [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)
+I had a lot of difficulty getting the project to build at various stages of the project... I also had issues with getting the database calls to update the dashboard as it took me a while to realize the thread was loading in the data after I was setting the textboxes
 
 ## License
 
-```plaintext
     Copyright [2024] [Anthony Caruso]
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -60,6 +51,10 @@ I had issues implementing the stretch features, mainly the swipe up refresh feat
         http://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
