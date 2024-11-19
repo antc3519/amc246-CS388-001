@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dashboard"
+        android:enabled="true"
+        android:icon="@drawable/baseline_moving_24"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/entries"
+        android:enabled="true"
+        android:icon="@drawable/baseline_mode_comment_24"
+        android:title="Entry Tracker"
+        app:showAsAction="ifRoom" />
+</menu>
